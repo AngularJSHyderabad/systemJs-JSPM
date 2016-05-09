@@ -1,0 +1,30 @@
+{
+  "name": "systemjsandjspm",
+  "version": "1.0.0",
+  "description": "System JS and JSPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suresh.vasabhaktula@gmail.com",
+  "license": "ISC",
+  "jspm": {
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.5.5",
+      "angular-ui-grid": "github:angular-ui/bower-ui-grid@^3.1.1",
+      "bootstrap": "github:twbs/bootstrap@^3.3.6",
+      "css": "github:systemjs/plugin-css@^0.1.21",
+      "less": "npm:systemjs-less-plugin@^1.8.1",
+      "ravi": "github:sravikiran/JSPM-SystemJS-Demos@master",
+      "traceur": "github:jmcriffey/bower-traceur@^0.0.108",
+      "underscore": "npm:underscore@^1.8.3"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4",
+      "tracer": "npm:babel-core@^5.8.24",
+      "tracer-runtime": "npm:babel-runtime@^5.8.24"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="college.dashboard">
+
+<head>
+    <meta charset="UTF-8">
+    <title>System JS and JSPM Demo</title>
+    <!--<link rel="stylesheet" href="jspm_packages/github/angular-ui/bower-ui-grid@3.1.1/ui-grid.min.css" />-->
+    <link rel="stylesheet" href="./build.css"/>
+    <!--<script src="jspm_packages/system.js"></script>-->
+    <!--<script src="./config.js"></script>-->
+    <script src="./build.js"></script>
+    <script>
+        System.import('./app/app.js').then(function(){ 
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center">System JS and JSPM Demo</h1>
+        <div ng-controller="studentsController" class="col-xs-6 panel panel-info">
+            <h4 class="panel-heading my-font-color">Student:</h4>
+            <div class="panel-body" ui-grid="studentGridOptions"></div>
+        </div>
+        <div ng-controller="teachersController" class="col-xs-6 panel panel-info">
+            <h4 class="panel-heading">Teachers:</h4>
+            <div class="panel-body" ui-grid="{ data: teachers }"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 logo bower-logo"></div>
+            <div class="col-xs-4 logo grunt-logo"></div>
+            <div class="col-xs-4 logo browserify-logo"></div>        
+        </div>
+    </div>
+</body>
+</html>
